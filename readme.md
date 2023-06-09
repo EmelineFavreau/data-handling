@@ -1,4 +1,9 @@
-Example 1:
+## File permission
+
+### Example 1:
+
+Use Python to remove write permission for group and other, for a given file: [Remove-group-other-write-permission.py](https://github.com/EmelineFavreau/data-handling/blob/master/Remove-group-other-write-permission.py)
+
 
 Set write permission for group `chmod g+w nowrite.test`
 
@@ -15,7 +20,9 @@ total 16
 -rw-r--r--  1 emelinefavreau  staff    0 23 May 10:04 test.txt`
 
 
-Example 2:
+### Example 2:
+
+Use Python to print permission of a file: [print-write-permission.py](https://github.com/EmelineFavreau/data-handling/blob/master/print-write-permission.py)
 
 Print write permission is present (True) or not (False) for a given file
 `python print-write-permission.py test.txt 
@@ -32,7 +39,13 @@ total 8
 -rw-r--r--  1 emelinefavreau  staff    0 23 May 10:04 test.txt`
 
 
-Example 3: 
+### Example 3: 
 
-Submit a simple script on HPC
-gzip-my-file.sh
+Use cron to automate small useful recurrent jobs: [cron-tips.md](https://github.com/EmelineFavreau/data-handling/blob/master/cron-tips.md)
+
+
+## Scheduling jobs
+
+### Submit a simple script on HPC
+
+[gzip-my-file.sh](https://github.com/EmelineFavreau/data-handling/blob/master/gzip-my-file.sh)
