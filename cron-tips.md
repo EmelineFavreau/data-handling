@@ -24,8 +24,8 @@ Check how `cron` works:
     # *  *  *  *  * user-name  command to be executed`
 
 Check which `cron` jobs I have:
-`crontab -l
-7 2 * * * chmod -R 555 my-backup/data`
+    crontab -l
+    7 2 * * * chmod -R 555 my-backup/data
 
 Here, there is one cronjob listed. The action is performed each day at 02:07 (`7 2 * * *`, [click here for an explanation for humans](https://cron.help/)). The job removes write permission for anyone (`chmod 555`) to the directory (`my-backup/data`) and the files within (`-R`).
 
