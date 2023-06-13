@@ -49,3 +49,11 @@ Use cron to automate small useful recurrent jobs: [cron-tips.md](https://github.
 ### Submit a simple script on HPC
 
 [gzip-my-file.sh](https://github.com/EmelineFavreau/data-handling/blob/master/gzip-my-file.sh)
+
+
+## Copying data across
+
+### Copying files onto HPC with checksum
+
+[copying-files-onto-hpc.md](https://github.com/EmelineFavreau/data-handling/blob/master/copying-files-onto-hpc.md)
+
