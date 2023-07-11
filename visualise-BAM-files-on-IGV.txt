@@ -1,0 +1,43 @@
+# Aim: visualise with IGV BAM files that are stored on the HPC
+
+
+# Step 1: This requires setting up the X Window system, which provides the basic framework for a graphical user interface (GUI) environment 
+
+
+
+### Set up apps on mac for a GUI environment of the HPC
+# first, download XQuartz (open-source implementation of X system on macOS) and install it on mac (https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.5/XQuartz-2.8.5.pkg)
+
+# second, download and install X2Go Client on mac (https://code.x2go.org/releases/binary-macosx/x2goclient/releases/4.1.2.3/x2goclient-4.1.2.3.20230629.OSX_10_13.dmg
+
+# open X2Go Client to set up a new session
+# for Cambridge's HPC
+Host: login-cpu.hpc.cam.ac.uk
+Login: CRSid
+SSH port: 22
+Use RSA/DSA key for ssh connection: /path/on/local/machine/.ssh/id_rsa
+Session Type: XFCE
+
+# include password, passphrase and MFA code to successfully login
+
+
+
+# Step 2: Set up IGV on HPC
+# First, download and install IGV on HPC
+	ssh user@login-cpu.hpc.cam.ac.uk
+	cd bin # this is my choice, it could go somewhere else
+	wget https://data.broadinstitute.org/igv/projects/downloads/2.16/IGV_Linux_2.16.1_WithJava.zip
+	unzip IGV_Linux_2.16.1_WithJava.zip
+
+
+# Second, test IGV on HPC via X2Go by starting a session
+# open the terminal and starts IGV
+bin/IGV_Linux_2.16.1/igv.sh
+
+
+### Learn more:
+# what is X forwarding?
+https://en.wikipedia.org/wiki/X_Window_System
+# read notes from other universities' training pages: https://hpc.mediawiki.hull.ac.uk/Training/X2Go_macOS and https://sysnews.ma.ic.ac.uk/configuring-and-using-x2g0.html
+# read about X2Go Client: 
+https://wiki.x2go.org/doku.php/doc:usage:start
